@@ -1,0 +1,111 @@
+/* app css stylesheet */
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+table.leds-table{
+    width:100%;
+    resize: both; overflow: auto;
+}
+table.leds-table td{
+    text-align:center;
+    font-size:1em;
+}
+
+table.buttons-table{
+    width:100%;
+    resize: both; overflow: auto;
+}
+table.buttons-table td{
+    text-align:center;
+    font-size:1em;
+}
+.button-base{
+    text-align:center;
+    font-size:1em;
+    
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+ 
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+ 
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+ 
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+.button-up{
+    background:buttonface;
+}
+.button-down{
+    background:buttonshadow;
+}
+
+.weather-div{
+    width:auto;
+    resize: both; overflow: auto;
+}
+.weather-div-left{
+    width:50%;
+    float:left;
+}
+.weather-div-right{
+    width:50%;
+    float:right;
+}
+.weather-div-right select{
+    float:right;
+}
+table.weather-table{
+    width:100%;
+    border-width: 1px;
+    border-collapse:collapse;
+}
+table.weather-table img{
+    vertical-align:middle;
+}
+th.weather-table-col1{
+    width:30%;
+}
+th.weather-table-col2{
+    width:70%;
+}
+table.weather-table td{
+    border-width: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-style: solid;
+    vertical-align: middle;
+}
+table.weather-table th{
+    border-width: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-style: solid;
+    text-align: left;
+}
+
+.note{
+    font-size:0.8em;
+}

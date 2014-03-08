@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="net.pic32mcu.accessory" version="1.00">
+    <name>PIC32 Kit</name>
+    <description>PIC32 Accessory Application</description>
+    <author email="pic32mcu@gmail.com" href="https://pic32mcu.blogspot.com">pic32mcu@gmail.com</author>
+    <access origin="*"/>
+    <preference name="fullscreen" value="true"/>
+    <preference name="webviewbounce" value="true"/>
+    
+    <feature name="StarterkitPlugin">
+        <param name="android-package" value="net.pic32mcu.accessory.StarterkitPlugin"/>
+    </feature>
+</widget>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PIC32 Kit</string>
+    <string name="app_short_name">PIC32 Kit</string>
+    <string name="app_long_name">PIC32 Accessory Kit</string>
+    <string name="connect_please">Starter Kit is not connected.</string>
+    <string name="plug_in_or_use_bluetooth">Please plug in the USB cable to connect to the Starter Kit.</string>
+    <string name="adk_description">A picture of PIC32 Starter Kit.</string>
+</resources>

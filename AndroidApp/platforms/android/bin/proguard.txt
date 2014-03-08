@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:10
+-keep class net.pic32mcu.accessory.ConnectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class net.pic32mcu.accessory.HomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class net.pic32mcu.accessory.USBAccessoryActivity { <init>(...); }
+

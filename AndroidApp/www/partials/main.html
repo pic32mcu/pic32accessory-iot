@@ -1,0 +1,72 @@
+<h3>PIC32 Android Accessory APP</h3>
+
+<div id="kitAttached">
+    <hr>
+    <div class="weather-div">
+        <div class="weather-div-left">
+            <b>Weather at:</b>
+        </div>
+        <div class="weather-div-right">
+            <select ng-model="cities.selected"
+                    ng-options="city as city.name for city in cities.getList()">
+            </select>    
+        </div>
+        <table class="weather-table">
+            <tr>
+                <th class="weather-table-col1">
+                    Description
+                </th>
+                <th class="weather-table-col2">
+                    <img ng-src="{{weather.getIconUrl();}}" 
+                         alt = "{{weather.getBrief();}}"/>
+                    {{ weather.getDesc(); }}
+                </th>
+            </tr>
+            <tr>
+                <td>Temperature</td>
+                <td>{{ weather.getTemperature() | toCelsius }} &deg;C</td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>{{ weather.getTime() | date:"MM/dd/yyyy @ h:mma" }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+    <div id="buttons">
+        <table class="buttons-table">
+            <tr>
+                <td ng-repeat="button in buttons.getList()">
+                    <div>
+                        SW{{button.id}}
+                    </div>
+                    <div class="button-base button-{{button.status}}">
+                        {{button.name}}
+                    </div>
+                </td>            
+            </tr>
+        </table>
+        <div class='note'>
+            1. toggle LED1 by SW1 switch<br>
+            2. select weather city by SW3/SW2 switches<br>
+        </div>
+    </div>
+    
+    <hr>
+    <div id="leds">
+        <table class="leds-table">
+            <tr>
+                <td ng-repeat="led in leds.getList()">
+                    <div>
+                        {{led.name}}
+                    </div>
+                    <div>
+                    <img ng-src="img/led_{{led.status}}_32.png" 
+                         alt = "{{led.name}}"/>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
