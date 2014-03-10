@@ -9,5 +9,5 @@ Directory:
 <li>demo video is available at https://github.com/pic32mcu/demo-video</li>
 </ul>
 <br>
-Please refer to https://pic32mcu.blogspot.com for more information
+Please refer to https://pic32mcu.blogspot.com/p/iot-demo.html for more information
 </p>
